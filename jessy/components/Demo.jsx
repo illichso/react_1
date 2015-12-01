@@ -52,6 +52,7 @@ var Demo = React.createClass({
                     <p><input type="submit"/></p>
                 </form>
             </div>
+
         );
     }
 });
