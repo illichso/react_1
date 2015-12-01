@@ -21,7 +21,14 @@
         }
     });
 
-    React.render(<BuckysComponent/>, document.getElementById('content'));
+    React.render(
+            <div>
+                <BuckysComponent/>
+                <BuckysComponent/>
+                <BuckysComponent/>
+                <BuckysComponent/>
+            </div>,
+            document.getElementById('content'));
 
 </script>
 
