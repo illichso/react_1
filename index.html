@@ -16,17 +16,17 @@
     var BuckysComponent = React.createClass({
         render: function () {
             return (
-                <h2>I like to eat {this.props.food}</h2>
+                <h2>{this.props.food} like to eat {this.props.food}</h2>
             );
         }
     });
 
     React.render(
             <div>
-                <BuckysComponent food ="Bacon"/>
-                <BuckysComponent food ="Tuna"/>
-                <BuckysComponent food ="Beef"/>
-                <BuckysComponent food ="Ham"/>
+                <BuckysComponent user ="Bucky" food ="Bacon"/>
+                <BuckysComponent user ="Sally" food ="Tuna"/>
+                <BuckysComponent user ="Emily" food ="Beef"/>
+                <BuckysComponent user ="Tony" food ="Ham"/>
             </div>,
             document.getElementById('content'));
 
