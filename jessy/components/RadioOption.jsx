@@ -3,8 +3,8 @@ var RadioOption = React.createClass({
         return (
             <p className="radio">
                 <label>
-                    <input type="radio" name="referrer" value="newspaper"/>
-                    Newspaper
+                    <input type="radio" name="referrer" value={this.props.value}/>
+                    {this.props.children}
                 </label>
             </p>
         );

@@ -8,18 +8,12 @@ var Demo = React.createClass({
                 <form>
                     <p className="h3">How did you hear about us?</p>
 
-                    <p className="radio">
-                        <label>
-                            <input type="radio" name="referrer" value="newspaper"/>
-                            Newspaper
-                        </label>
-                    </p>
-                    <p className="radio">
-                        <label>
-                            <input type="radio" name="referrer" value="radio"/>
-                            Radio
-                        </label>
-                    </p>
+                    <RadioOption value="newspaper">
+                        Newspaper
+                    </RadioOption>
+                    <RadioOption value="radio">
+                        Radio
+                    </RadioOption>
                     <p className="radio">
                         <label>
                             <input type="radio" name="referrer" value="tv"/>
