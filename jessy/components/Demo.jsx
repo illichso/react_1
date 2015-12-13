@@ -11,27 +11,23 @@ var Demo = React.createClass({
                     <RadioOption value="newspaper">
                         Newspaper
                     </RadioOption>
+
                     <RadioOption value="radio">
                         Radio
                     </RadioOption>
-                    <p className="radio">
-                        <label>
-                            <input type="radio" name="referrer" value="tv"/>
-                            Television
-                        </label>
-                    </p>
-                    <p className="radio">
-                        <label>
-                            <input type="radio" name="referrer" value="search"/>
-                            Search Engine
-                        </label>
-                    </p>
-                    <p className="radio">
-                        <label>
-                            <input type="radio" name="referrer" value="social"/>
-                            Social Media
-                        </label>
-                    </p>
+
+                    <RadioOption value="tv">
+                        Television
+                    </RadioOption>
+
+                    <RadioOption value="search">
+                        Search Engine
+                    </RadioOption>
+
+                    <RadioOption value="social">
+                        Social Media
+                    </RadioOption>
+
                     <p className="form-group radio">
                         <label>
                             <input type="radio" name="referrer" value="other"/>
