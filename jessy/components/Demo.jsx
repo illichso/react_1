@@ -31,6 +31,7 @@ var Demo = React.createClass({
                     <RadioOtherOption/>
 
                     <p><input type="submit"/></p>
+
                 </form>
             </div>
 
