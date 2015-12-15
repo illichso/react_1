@@ -1,5 +1,12 @@
 var Demo = React.createClass({
     render: function () {
+        var radioOptions = [
+            {value: 'newspaper', label: 'Newspaper'},
+            {value: 'radio', label: 'Radio'},
+            {value: 'tv', label: 'Television'},
+            {value: 'search', label: 'Search Engine'},
+            {value: 'social', label: 'Social Media'}
+        ];
         return (
 
             <div className="container">
