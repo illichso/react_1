@@ -4,7 +4,7 @@ var RadioOptionGroup = React.createClass({
             <div>
                 {this.props.options.map(function(option){
                     return (
-                    <RadioOption value={option.value}>
+                    <RadioOption value={option.value} key={option.value}>
                         {option.label}
                     </RadioOption>
                         );
