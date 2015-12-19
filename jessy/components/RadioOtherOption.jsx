@@ -13,6 +13,8 @@ var RadioOtherOption = React.createClass({
     },
     componentDidUpdate: function () {
         var input = this.refs.input.getDOMNode();
+        console.log("componentDidUpdate", input);
+
 
         this.setState({
             checked: input.checked
