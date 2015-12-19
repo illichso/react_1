@@ -24,7 +24,11 @@ var RadioOptionGroup = React.createClass({
                         );
                     })}
 
-                {this.props.other && <RadioOtherOption ref="other"/>}
+                {this.props.other &&
+                <RadioOtherOption
+                    ref="other"
+                    name={name}
+                />}
             </div>
         );
     }
