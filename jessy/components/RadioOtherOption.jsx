@@ -1,5 +1,5 @@
 var RadioOtherOption = React.createClass({
-    getInitialState: function(){
+    getInitialState: function () {
         return {
             checked: false
         };
@@ -7,7 +7,12 @@ var RadioOtherOption = React.createClass({
     onChange: function (event) {
         var input = event.target;
 
-        //console.log(event, input);
+        this.setState({
+            checked: input.checked
+        });
+    },
+    componentDidUpdate: function () {
+        var input = this.refs.input.getDOMNode();
 
         this.setState({
             checked: input.checked
@@ -18,7 +23,7 @@ var RadioOtherOption = React.createClass({
 
             <p className="form-group radio">
                 <label>
-                    <input onChange={this.onChange} type="radio" name="referrer" value="other"/>
+                    <input ref="input" onChange={this.onChange} type="radio" name="referrer" value="other"/>
                     Other
                 </label>
                 {this.state.checked && (
